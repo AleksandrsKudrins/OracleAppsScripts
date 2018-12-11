@@ -42,13 +42,13 @@ BEGIN
         DBMS_OUTPUT.put_line (
            'Responsiblity '
         || v_responsibility_name
-        || ' is removed from the user '
+        || ' assignment is end dated for user '
         || v_user_name
-        || ' Successfully');
+        || ' successfully');
 EXCEPTION
     WHEN OTHERS
     THEN
         DBMS_OUTPUT.put_line (
-               'Error encountered while deleting responsibilty from the user and the error is '
+               'Exception occured: '
             || SQLERRM);
 END;
